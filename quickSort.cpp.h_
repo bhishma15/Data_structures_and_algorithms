@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int solve(){
+	//BASE CONDITION
+
+
+	//RECURSIVE CALL
+	
+}
+
+int main(){
+
+	return 0;
+} 

@@ -1,0 +1,164 @@
+
+
+1) Pair
+
+#include<utility>
+
+Syntax:
+
+	pair<data type1, data type2> pair_name;
+
+Initialization:
+
+	* pair<int,char> p(1,'g');
+
+	* pair<int,char> p;
+
+		p.first = 1;
+		p.second = 'g';
+
+	* pair<int,char> p;
+
+		p = make_pair(1,'g');
+
+	* pair<int,char> h(p);
+
+ 	* pair<int,char> p;
+
+ 		p = {1,'g'};
+
+ Member functions:
+
+ 	//make pair
+
+ 		make_pair() 
+
+ 		make_pair(1,2);
+
+ 	// swap values between two pairs
+
+ 		swap()
+
+ 		pair1.swap(pair2);
+
+
+2) Vector
+
+Syntax:
+
+	vector<int> v;
+
+Initialization:
+
+	//vector of 10 elements
+
+	vector<int> v(10);
+	
+	//vector of 10 elements with all 5
+
+	vector<int> v(10,5);
+
+	// vector initialized by other vector
+
+	vector<int> x(v);
+
+Traversal:
+
+	begin() and end()
+
+		vector<int> v(10,5);
+
+		vector<int>::iterator itr;
+
+			for(itr = v.begin();itr!=v.end();itr++){
+
+				cout<< *itr <<endl;
+			}
+
+
+
+	rbegin() and rend()
+
+		vector<int> v(10,5);
+
+		vector<int>::reverse_iterator itr;
+
+			for(itr = v.rbegin();itr!=v.rend();itr++){
+
+				cout<< *itr <<endl;
+			}
+
+	cbegin() and cend()
+
+		vector<int> v(10,5);
+
+		vector<int>::const_iterator itr;
+
+			for(itr = v.cbegin();itr!=v.cend();itr++){
+
+				cout<< *itr <<endl;
+			}
+
+	crbegin() and crend()
+
+		vector<int> v(10,5);
+
+		vector<int>::const_reverse_iterator itr;
+
+			for(itr = v.crbegin();itr!=v.crend();itr++){
+
+				cout<< *itr <<endl;
+			}
+
+	or
+
+			for(auto itr = v.begin();itr!=v.end();itr++){
+
+				cout<< *itr <<endl;
+			}
+
+
+
+	for (auto x:v) {
+
+		cout<<x<<endl;
+	}
+
+	for (int i=0;i<v.size();i++) { 
+
+		cout<<v.at(i)<<endl;
+	}
+
+
+Functions:
+
+	//return the no of elements
+		size()
+
+	// tell wheather vector is empty or not
+		empty()
+
+	// resize to add new n elements
+		resize(n);
+
+Accessor:
+
+	at()
+
+	front()
+
+	back()
+
+Modifiers:
+
+	push_back()
+
+	pop_back()
+
+	insert()
+
+	erase()
+
+	clear()
+
+	swap()
